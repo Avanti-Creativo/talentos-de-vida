@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import { motion } from "framer-motion"
 import { useScrollAnimation } from "@/lib/useScrollAnimation"
@@ -127,9 +128,11 @@ export function FinalCTA() {
 
           {/* Final CTA */}
           <motion.div variants={itemVariants} className="text-center">
-            <Button variant="primary" size="xl" className="shadow-soft-lg">
-              MUÉSTRAME MI TESORO ESCONDIDO
-            </Button>
+            <Link href="/quiz">
+              <Button variant="primary" size="xl" className="shadow-soft-lg">
+                MUÉSTRAME MI TESORO ESCONDIDO
+              </Button>
+            </Link>
             <p className="font-circular text-sm text-gray-500 mt-4">
               Tu transformación comienza con un clic
             </p>

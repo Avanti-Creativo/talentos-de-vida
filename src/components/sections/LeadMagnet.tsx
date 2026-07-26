@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import { Input } from "@/components/ui/Input"
 import { motion } from "framer-motion"
@@ -133,21 +134,16 @@ export function LeadMagnet() {
 
               {/* Form */}
               <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20">
-                <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-                  <div>
-                    <Input
-                      type="email"
-                      placeholder="Tu mejor email"
-                      className="w-full"
-                    />
-                  </div>
-                  <Button variant="primary" size="xl" className="w-full bg-golden hover:bg-golden/90 text-gray-800">
-                    MUÉSTRAME MI TESORO ESCONDIDO
-                  </Button>
-                  <p className="font-circular text-xs text-white/60 text-center">
-                    🔒 Tu información está segura. No spam, solo valor.
-                  </p>
-                </form>
+                <div className="space-y-4">
+  <Link href="/quiz" className="block">
+    <Button variant="primary" size="xl" className="w-full bg-golden hover:bg-golden/90 text-gray-800">
+      MUÉSTRAME MI TESORO ESCONDIDO
+    </Button>
+  </Link>
+  <p className="font-circular text-xs text-white/60 text-center">
+    🔒 Tu información está segura. No spam, solo valor.
+  </p>
+</div>
               </div>
             </motion.div>
           </div>
