@@ -1,6 +1,5 @@
 "use client"
 
-import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import { motion } from "framer-motion"
 import { useScrollAnimation } from "@/lib/useScrollAnimation"
@@ -172,9 +171,11 @@ export function Method() {
 
           {/* CTA */}
           <motion.div variants={itemVariants} className="mt-12 text-center">
-            <Button variant="primary" size="xl">
-              MUÉSTRAME MI TESORO ESCONDIDO
-            </Button>
+            <a href="#lead-magnet">
+  <Button variant="primary" size="xl">
+    MUÉSTRAME MI TESORO ESCONDIDO
+  </Button>
+</a>
           </motion.div>
         </motion.div>
       </div>
