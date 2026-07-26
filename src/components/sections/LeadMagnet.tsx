@@ -41,7 +41,7 @@ export function LeadMagnet() {
   }
 
   return (
-    <section ref={ref} className="section-padding bg-teal relative overflow-hidden">
+    <section ref={ref} id="lead-magnet" className="section-padding bg-teal relative overflow-hidden">
       {/* Decorative elements */}
       <div className="absolute top-0 left-0 w-full h-full opacity-10">
         <div className="absolute top-20 left-10 w-64 h-64 bg-white organic-shape-1" />
