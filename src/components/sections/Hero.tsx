@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import { motion } from "framer-motion"
 import Image from "next/image"
@@ -116,9 +117,11 @@ export function Hero() {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="flex flex-col items-center gap-3"
         >
-          <Button variant="primary" size="xl">
-            MUÉSTRAME MI TESORO ESCONDIDO
-          </Button>
+          <Link href="/quiz">
+            <Button variant="primary" size="xl">
+              MUÉSTRAME MI TESORO ESCONDIDO
+            </Button>
+          </Link>
           <p className="font-circular text-sm text-gray-500">
             Descarga gratis el mapa • Toma solo 10 minutos
           </p>

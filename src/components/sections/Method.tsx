@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { Button } from "@/components/ui/Button"
 import { motion } from "framer-motion"
 import { useScrollAnimation } from "@/lib/useScrollAnimation"
